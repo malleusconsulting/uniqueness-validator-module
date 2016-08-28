@@ -17,12 +17,14 @@ In the example below, *link01* will be validated against *link02* and *link03*. 
 ## Issues and Limitations
 ### Reporting total errors in a dialog
 The process of displaying error messages and displaying the total number of errors in a dialog takes place in two phases.
+
 1. Fields are validated when their value changes and the error message is set but not displayed.
 2. On submitting the form, the save action validates every field to ensure it is not committing invalid data. Where errors are found, the fields are validated once again to establish the total number of errors for display at the top of the dialog, as seen below.
 
 <img src="https://raw.githubusercontent.com/malleusconsulting/uniqueness-validator-module/gh_pages/total_errors_feedback.png" width="720" height="38" title="Feedback on total errors in a dialog" />
 
 This validator does not handle this two step process well. Consider two fields, *a* and *b*, that are configured to validate against each other and ensure they are unique.
+
 1. On first use of the dialog, *a* is set to the value **"abc"** and *b* remains empty. The validator on *a* runs and find that the value is unique.
 2. *b* is set to **"abc"**. *b*'s validator runs and finds the field is not unique so sets an error message ready for future display.
 3. The save button is clicked. Both validators are run via the save action and report *a* and *b* are in an invalid state.
