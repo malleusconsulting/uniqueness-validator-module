@@ -3,7 +3,7 @@
   <modelVersion>4.0.0</modelVersion>
   <groupId>uk.co.malleusconsulting.magnolia.ui.form</groupId>
   <artifactId>uniqueness-validator-module</artifactId>
-  <version>1.0.0-SNAPSHOT</version>
+  <version>0.9-beta-01</version>
   <packaging>jar</packaging>
 
   <name>uniqueness-validator-module</name>
@@ -34,7 +34,7 @@
     <connection>scm:git:git://github.com/malleusconsulting/uniqueness-validator-module.git</connection>
     <developerConnection>scm:git:git@github.com:malleusconsulting/uniqueness-validator-module.git</developerConnection>
     <url>https://github.com/malleusconsulting/uniqueness-validator-module</url>
-    <tag>HEAD</tag>
+    <tag>uniqueness-validator-module-0.9-beta-01</tag>
   </scm>
 
   <distributionManagement>
